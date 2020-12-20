@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Binh Nguyen Portfolio</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="header_area">
+    <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container box_1620">
+    
+    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+    <ul class="nav navbar-nav menu_nav ml-auto">
+    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="my-project.html">My Project</a></li>
+    <li class="nav-item submenu dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IT Technologies</a>
+    <ul class="dropdown-menu">
+    <li class="nav-item"><a class="nav-link" href="AI.html">AI</a></li>
+    <li class="nav-item"><a class="nav-link" href="cloud-computing.html">Cloud Computing</a></li>
+    </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="IT-work.html">IT Work</a></li>
+    <li class="nav-item submenu dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Git Tutorial</a>
+      <ul class="dropdown-menu">
+        <li class="nav-item"><a class="nav-link" href="what-is-git.html">What is Git?</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-workflow.html">Git workflow</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-repo.html">Creating repository</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-record.html">Recording changes</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-undo.html">Undoing changes</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-sync.html">Syncing repository</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-rewrite.html">Rewriting history</a></li>
+      </ul>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    </div>
+</header>
+
+
+<section class="banner_area">
+<div class="box_1620">
+<div class="banner_inner d-flex align-items-center">
+<div class="container">
+<div class="banner_content text-center">
+<h2>Git workflow</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="sample-text-area">
+  <div class="container">
+  <p class="sample-text">There are three main components of a Git project:</p>
+  <ul class="git-list">
+    <li><p class="text-left">Repository</p></li>
+    <li><p class="text-left">Working tree</p></li>
+    <li><p class="text-left">Index</p></li>
+  </ul>
+  <p>The <b>repository</b>, or repo, is the “container” that tracks the changes to your project files. It holds all the commits—a snapshot of all your files at a point in time—that have been made. You can access the commit history with the Git log.</p>
+  <p>The <b>working tree</b>, or working directory, consists of files that you are currently working on. You can think of a working tree as a file system where you can view and modify files.</p>
+  <p>The <b>index</b>, or staging area, is where commits are prepared. The index compares the files in the working tree to the files in the repo. When you make a change in the working tree, the index marks the file as modified before it is committed.</p>
+  <img src="img/git_workflow_001.png" alt="">
+  <p>Below is the basic Git workflow:</p>
+  <ol class="ordered-list">
+    <li><span>Modify files in the working tree.</span></li>
+    <li><span>Stage the changes you want to be included in the next commit.</span></li>
+    <li><span>Commit changes. Committing will take the files from the index and store them as a snapshot in the repository.</span></li>
+  </ol>
+  <h3>Three states of Git files</h3>
+  <p>As you can probably guess from the Git workflow, files can be in one of three states:</p>
+  <ul class="git-list">
+    <li><p class="text-left">Modified</p></li>
+    <li><p class="text-left">Staged</p></li>
+    <li><p class="text-left">Committed</p></li>
+  </ul>
+  <p>When a file is first modified, the change can only be found in the working tree. You must stage the changes you want to be included in your next commit. The index contains all file changes that will be committed. Once you have finished staging files, commit them with a message describing what you changed. The modified files are now safely stored in the repo.</p>
+  <img src="img/git_workflow_002.png" alt="">
+  </div>
+  </section>
+
+
+<footer class="footer_area p_120">
+  <div class="container">
+  <div class="row footer_inner">
+  <div class="col-lg-5 col-sm-6">
+  <aside class="f_widget ab_widget">
+  <div class="f_title">
+  <h3>Contact Me</h3>
+  </div>
+  <p>School Email: s3883631@rmit.edu.vn</p>
+  <p>Personal Email: nguyen.alits@gmail.com</p>
+  </aside>
+  </div>
+  <div class="col-lg-5 col-sm-6">
+    <aside class="f_widget social_widget">
+      <div class="f_title">
+      <h3>Follow Me</h3>
+      </div>
+      <p>Let us be social</p>
+      <ul class="list">
+      <li><a href="https://www.facebook.com/binh.booong1106"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/bin.hhh/"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://github.com/Binh-Nguyen-Huy"><i class="fa fa-github"></i></a></li>
+      </ul>
+      </aside>
+  </div>
+  <div class="col-lg-2">
+  <aside class="f_widget social_widget">
+    <img src="img/logo.png" alt="">
+  </aside>
+  </div>
+  </div>
+  </div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/theme.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+
+</html>

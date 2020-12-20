@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Binh Nguyen Portfolio</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="header_area">
+    <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container box_1620">
+    
+    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+    <ul class="nav navbar-nav menu_nav ml-auto">
+    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="my-project.html">My Project</a></li>
+    <li class="nav-item submenu dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IT Technologies</a>
+    <ul class="dropdown-menu">
+    <li class="nav-item"><a class="nav-link" href="AI.html">AI</a></li>
+    <li class="nav-item"><a class="nav-link" href="cloud-computing.html">Cloud Computing</a></li>
+    </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="IT-work.html">IT Work</a></li>
+    <li class="nav-item submenu dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Git Tutorial</a>
+      <ul class="dropdown-menu">
+        <li class="nav-item"><a class="nav-link" href="what-is-git.html">What is Git?</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-workflow.html">Git workflow</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-repo.html">Creating repository</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-record.html">Recording changes</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-undo.html">Undoing changes</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-sync.html">Syncing repository</a></li>
+        <li class="nav-item"><a class="nav-link" href="git-rewrite.html">Rewriting history</a></li>
+      </ul>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    </div>
+</header>
+
+
+<section class="banner_area">
+<div class="box_1620">
+<div class="banner_inner d-flex align-items-center">
+<div class="container">
+<div class="banner_content text-center">
+<h2>Syncing repositories</h2>
+<p>Remote repositories allow us to share our changes with other members of the team. They can be on a private server, on a different computer than yours, or hosted using a service like Backlog. Wherever yours is hosted, you'll need to be able to sync your local repository with the remote repository frequently. You'll do this using three commands: git push, git pull, and git merge.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="sample-text-area">
+  <div class="container">
+  <h3>Git push</h3>
+  <p>In order to start sharing changes with others, you have to push them to a remote repository using the "push" command. This will cause the remote repository to update and synchronize with your local repository.</p>
+  <img src="img/syncing_repositories_001.png" alt="">
+  <h3>Git pull</h3>
+  <p>Whenever somebody pushes their changes to the shared remote repository, your local repository becomes out of date. To re-synchronize your local repository with the newly updated remote repository, simply run the git pull operation.</p>
+  <p>When the pull is executed, the latest revision history will download from the remote repository and import to your local repository.</p>
+  <img src="img/syncing_repositories_002.png" alt="">
+  <h3>Git merge</h3>
+  <p>Your push to the remote repository will be rejected if your local repository is out of date, possibly because there are some updates on the remote repository that you do not have locally yet.</p>
+  <img src="img/syncing_repositories_003.png" alt="">
+  <p>If that is the case, you'll have to use the git merge command to grab the latest change from the remote repository before you are allowed to push. Git enforces this to ensure that changes made by other members get retained in the history.</p>
+  <img src="img/syncing_repositories_004.png" alt="">
+  <p>During a "merge", Git will attempt to automatically apply those history changes and merge them with the current branch. However, if there is a conflict in changes, Git will throw an error prompting you to resolve the conflict manually.</p>
+  <h3>Resolve merge conflicts</h3>
+  <p>When merging two branches, you may come across a conflict that needs resolving before you can properly complete the merge. For example, when two or more members make changes on the same part of a file in the two different branches (remote and local branches in this case), Git will not be able to automatically merge them.</p>
+  <p>When this happens, Git will add some standard conflict-resolution markers to the conflicting file. The markers help you figure out which sections of the file need to be manually resolved.</p>
+  <img src="img/syncing_repositories_005.png" alt="">
+  <p>In my example, everything above "=====" is your local content, and everything below it comes from the remote branch.</p>
+  <p>You must resolve the conflicting parts as shown below before you can proceed with creating a merge commit.</p>
+  <img src="img/syncing_repositories_006.png" alt="">
+  </div>
+  </section>
+
+
+<footer class="footer_area p_120">
+  <div class="container">
+  <div class="row footer_inner">
+  <div class="col-lg-5 col-sm-6">
+  <aside class="f_widget ab_widget">
+  <div class="f_title">
+  <h3>Contact Me</h3>
+  </div>
+  <p>School Email: s3883631@rmit.edu.vn</p>
+  <p>Personal Email: nguyen.alits@gmail.com</p>
+  </aside>
+  </div>
+  <div class="col-lg-5 col-sm-6">
+    <aside class="f_widget social_widget">
+      <div class="f_title">
+      <h3>Follow Me</h3>
+      </div>
+      <p>Let us be social</p>
+      <ul class="list">
+      <li><a href="https://www.facebook.com/binh.booong1106"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/bin.hhh/"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://github.com/Binh-Nguyen-Huy"><i class="fa fa-github"></i></a></li>
+      </ul>
+      </aside>
+  </div>
+  <div class="col-lg-2">
+  <aside class="f_widget social_widget">
+    <img src="img/logo.png" alt="">
+  </aside>
+  </div>
+  </div>
+  </div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/theme.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+
+</html>
